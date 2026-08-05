@@ -12,7 +12,7 @@ CREATE TABLE `rate_res` (
     FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`),
     FOREIGN KEY (`res_id`) REFERENCES `restaurant` (`res_id`)
 );
--- Data cho rate_res
+-- Dữ liệu cho rate_res
 INSERT INTO `rate_res` (`user_id`,`res_id`,`amount`, `date_rate`) VALUES 
 					(1,1,5,NOW()),
 					(2,1,4,NOW()),
